@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 });
 */
 
-Route::get('/Inicio', [PreRegistrationController::class, 'index']);
+Route::get('/', [PreRegistrationController::class, 'index']);
 Route::get('/Contactanos');
 Route::get('/SobreNosotros');
 Route::get('/FAQ');
