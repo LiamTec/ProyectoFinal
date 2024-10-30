@@ -8,10 +8,10 @@ use Illuminate\Support\Facades\Route;
 });
 */
 
-Route::get('/', [PreRegistrationController::class, 'index']);
-Route::get('/Contactanos');
-Route::get('/SobreNosotros');
-Route::get('/FAQ');
+Route::get('/', [PreRegistrationController::class, 'index'])->name('Index');
+Route::get('/Contactanos', [PreRegistrationController::class, 'Contactanos'])->name('Contactanos');
+Route::get('/SobreNosotros', [PreRegistrationController::class, 'SobreNosotros'])->name('SobreNosotros');
+Route::get('/FAQ', [PreRegistrationController::class, 'FAQ'])->name('FAQ');
 
 Route::middleware([
     'auth:sanctum',

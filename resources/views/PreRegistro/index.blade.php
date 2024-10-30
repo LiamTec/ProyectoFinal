@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="devshare">
-    <h1>DevShare</h1>
+    <p>DevShare</p>
 </div>
 <div class="presentacion">
     <div class="text">

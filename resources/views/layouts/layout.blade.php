@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
         * {
             box-sizing: border-box;
             padding: 0;
             margin: 0;
-            font-family: Nunito, sans-serif;
+            font-family: "AR One Sans", sans-serif;
             font-size: 17px;
         }
         body {
@@ -81,12 +82,12 @@
         }
         .devshare{
             display: flex;
-            font-weight:300;
+            font-weight:400;
             padding-top: 100px;
             justify-content: center;
             height: 555px;
         }
-        .devshare h1{
+        .devshare p{
             font-size: 60px;
         }
         
@@ -137,13 +138,13 @@
     <header class="header">
         <div class="logo">
             <a href="index.html"><img src="unknown-1.png" alt="DevShare"></a>
-            <a href="index.html">DevShare</a>
+            <a href="{{ route('Index') }}">DevShare</a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contactanos</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="{{ route('SobreNosotros') }}">Sobre Nosotros</a></li>
+                <li><a href="{{ route('Contactanos') }}">Contactanos</a></li>
+                <li><a href="{{ route('FAQ') }}">FAQ</a></li>
             </ul>
         </nav>
         <div class="link-user">
